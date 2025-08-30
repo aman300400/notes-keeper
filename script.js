@@ -41,7 +41,7 @@ document.getElementById('myBtn').addEventListener('click', () => {
 
 // Delete Note Function
 // eslint-disable-next-line no-unused-vars
-function deleteNote(index) {
+function deleteNote(index) { 
   const notesObj = JSON.parse(localStorage.getItem('notes')) || [];
   notesObj.splice(index, 1);
   localStorage.setItem('notes', JSON.stringify(notesObj));
